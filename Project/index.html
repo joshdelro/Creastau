@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <!-- Functions -->
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="functionality.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav">
+        <a href="javascript:void(0);" id="burger" onclick="">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#" id="logo"><i class="fa fa-ravelry"></i> CREASTAÚ</a>
+        <span class="right1">
+            <a href="#featured" class="right">Shop</a>
+            <a href="#about" class="right">About</a>
+            <a href="#menu" class="right">Menu</a>
+            <a href="#branches" class="right">Branches</a>
+            <a href="#contact" class="right">Contact</a>
+            <a class="right" onclick="document.getElementById('cart').style.display='block'"><i class="fa fa-shopping-cart" aria-hidden="true"> Cart</i></a>
+        </span>
+    </div>
+    <!-- content -->
+    <div class="content">
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <!-- slideshow content -->
+            <div class="slides fade">
+                <img src="img/brooke-lark-08bOYnH_r_E-unsplash.jpg">
+                    <div class="info2">
+                        <p>YOUR DAY JUST GOT<br> INSTANTY BETTER</p>
+                    <h2 class="my">Follow and <br>Save 20%</h2>
+                    <p class="my4">Available on any branches</p>
+                    <div class="center my">
+                        <button class="btn">BUTTON</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slides fade">
+                <img src="img/pexels-cottonbro2.jpg">
+                <div class="info">
+                    <p>MAKE YOUR MEAL<br>SPECIAL AT HOME</p>
+                    <h2 class="my">Let Us Deliver <br> To Your Door</h2>
+                    <p class="my5">FREE delivery on selected <br>areas  on orders P500+</p>
+                    <div class="center my2">
+                        <button class="btn">BUTTON</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slides">
+              <img src="img/pexels-cottonbro2.jpg">
+            </div>
+            <!-- Back and forward buttons -->
+            <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+         <!-- Featured section -->
+        <div id="featured">
+            <!-- 10% padding -->
+        <div class="sc2"></div>
+        <div class="view">
+            <div class="container">
+                <div class="featProdContainer">
+                    <div class="featProd bg2" id="item1">
+                        <img src="img/food1.png" id="prodImg">
+                        <div class="center">
+                            <div class="featDesc">
+                                <p id="prodName">1st Food Sample</p>
+                                <p>₱<span id="prodPrice">500.00</span></p>
+                            </div>
+                            <button class="btn featBtn rev my4" onclick="addToCart(item1)">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="featProd bg6" id="item2">
+                        <img src="img/food1.png">
+                        <div class="center">
+                            <div class="featDesc">
+                                <p id="prodName">2nd Food Sample</p>
+                                <p>₱<span id="prodPrice">600.00</span></p>
+                            </div>
+                            <button class="btn featBtn rev my4">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="featProd" id="item3">
+                        <img src="img/food1.png">
+                        <div class="center">
+                            <div class="featDesc">
+                                <p id="prodName">3rd Food Sample</p>
+                                <p>₱<span id="prodPrice">333.00</span></p>
+                            </div>
+                            <button class="btn featBtn rev my4" >ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd row featured-->
+            <div class="sc"></div>
+            <div class="view">
+                <div class="container">
+                    <div class="featProdContainer">
+                        <div class="featProd bg3">
+                            <img src="img/food1.png">
+                            <div class="center">
+                                <div class="featDesc">
+                                    <p id="prodName">4th Food Sample</p>
+                                    <p>₱<span id="prodPrice">500.00</span></p>
+                                </div>
+                                <button class="btn featBtn rev my4">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="featProd bg4">
+                            <img src="img/food1.png">
+                            <div class="center">
+                                <div class="featDesc">
+                                    <p id="prodName">5th Food Sample</p>
+                                    <p>₱<span id="prodPrice">600.00</span></p>
+                                </div>
+                                <button class="btn featBtn rev my4">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="featProd bg5">
+                            <img src="img/food1.png">
+                            <div class="center">
+                                <div class="featDesc">
+                                    <p id="prodName">6th Food Sample</p>
+                                    <p>₱<span id="prodPrice">700.00</span></p>
+                                </div>
+                                <button class="btn featBtn rev my4">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="view2 alt"></div> <!-- bg alt-->
+        </div> <!-- end featured-->
+        <!-- About section -->
+        <div id="about">
+        <div class="sc"></div>
+            <div class="view my5">
+                <div class="container">
+                    <div class="featProdContainer row">
+                        <div class="aboutCont columnAbout center">
+                            <video controls autoplay muted><source src="img/about.mp4" type="video/mp4"></video>
+                        </div>
+                        <div class="aboutCont columnAbout2 center rel my5">
+                            <h1>About Creastau</h1>
+                            <hr class="hr1">
+                            <p class="my4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda deleniti vel obcaecati quia. Id laudantium numquam perspiciatis voluptas error, distinctio, praesentium esse neque blanditiis in dolore ea dicta animi. Totam obcaecati veritatis commodi iste corporis, a fugiat amet? Harum dolorum tempore atque consequatur quibusdam illum accusamus voluptatum suscipit repellat aut!</p>
+                            <p class="my5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda deleniti vel obcaecati quia. Id laudantium numquam perspiciatis voluptas error, distinctio, praesentium esse neque blanditiis in dolore ea dicta animi. Totam obcaecati veritatis commodi iste corporis, a fugiat amet? Harum dolorum tempore atque consequatur quibusdam illum accusamus voluptatum suscipit repellat aut!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end about-->
+        <div class="parallax"></div>
+        <!-- Menu -->
+        <div id="menu">
+        <div class="sc"></div>
+            <div class="view3">
+                <div class="menuContainer">
+                    <div class="menuCont center row">
+                        <h1>Our Food Menu</h1>
+                        <hr class="hr2">
+
+                        <div class="my5 row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true">  </i> 
+                            </div>
+
+                            <div class="menuItem columnMenu">
+                                <span id="prodName" class="fl">Food sample</span> <span id="prodPrice" class="fr">P500</span>
+                            </div>
+                            <div class="menuItem columnMenu2">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end menu-->
+        <!-- branches -->
+        <div class="sc"></div>
+        <div id="branches">
+            <div class="view">
+                <div class="container">
+                    <div class="menuCont center row"> <!-- reused title of menu-->
+                        <h1>Our Branches</h1>
+                        <hr class="hr2">
+                    </div>
+                    <div class="my5 row">
+                        <div class="branchesCont">
+                            <div class="columnBranches mapCont">
+                                <img src="img/branch1.jpg" >
+                                <div class="mapOver">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.233723929754!2d121.06082671471066!3d14.528619282731945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8ba3245d467%3A0x4b15e14c3c0cba7a!2sIvory%20Tower%2C%20Rosewood%20Pointe!5e0!3m2!1sfil!2sph!4v1614907386387!5m2!1sfil!2sph" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                            <div class="columnBranches2 mapCont">
+                                <img src="img/branch2.jpg" >
+                                <div class="mapOver">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.811515592564!2d120.98735196466463!3d14.609810589796558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b600238aa597%3A0x5a88712d3335633f!2sEspa%C3%B1a%20Blvd%2C%20Sampaloc%2C%20Manila%2C%201008%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1639361880765!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="branchesCont">
+                            <div class="columnBranches2 mapCont">
+                                <img src="img/branch3.jpg" >
+                                <div class="mapOver">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61779.71963888167!2d120.98852307321347!3d14.585824707586204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9fe4d5c19af%3A0xa9f61ab904ebad67!2sPancake%20House!5e0!3m2!1sfil!2sph!4v1639371632524!5m2!1sfil!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                            <div class="columnBranches mapCont">
+                                <img src="img/branch4.jpg" >
+                                <div class="mapOver">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.8804601753905!2d120.98519215038556!3d14.60588485187141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cb0431b553b1%3A0x9948ac04a2d49066!2sPoldo&#39;s%20Steakhouse!5e0!3m2!1sen!2sph!4v1639361947756!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--end branches -->
+        <div class="sc"></div>
+        <div class="parallax2"></div>
+        <!-- contact -->
+        <div id="contact">
+        <div class="sc"></div>
+            <div class="view3">
+                <div class="menuContainer">
+                    <div class="menuCont center row py10"> <!-- reused title of menu-->
+                        <h1>Contact Us</h1>
+                        <hr class="hr2">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="fname" id="fname" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="Email" name="Email" id="Email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <button class="btn rev btncon my5">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer">
+                <div class="center"> <!-- reused font-->
+                    <p>Copyright &copy; 2021 CREASTAÚ | Josh Del Rosario</p>
+                </div>
+            </div>
+        </div>
+    </div> <!--end content -->
+    
+    <!-- cart -->
+    <div id="cart" class="modal">
+    <span onclick="document.getElementById('cart').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content">
+        <div class="viewModal container">
+            <div class="row">
+                <div id="cartCol" class="column">
+                    <p class="my5">Total: <span id="cartTotal"></span> </p>
+                </div>
+                <div class="column">
+                    <form>
+                        <div class="form-group center">
+                            <select>
+                                <option value="">DELIVERY OPTION</option>
+                                <option value="">PICK UP</option>
+                                <option value="">DELIVERY</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="fname" id="fname" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="phoneNo" id="phoneNo" placeholder="Phone Number" min="0" max="">
+                        </div>
+                        <div class="form-group">
+                            <input name="address" id="address" placeholder="Address"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="instructions" id="instructions" placeholder="Additional Instructions"></textarea>
+                            <input type="date" id="birthday" name="birthday">
+                            <label> Delivery Date</label>
+                        </div>
+                        <div class="form-group2 center">
+                            <input type="checkbox" class="check">
+                            <label for="fork">fork</label>
+                            <input type="checkbox" class="check">
+                            <label for="spoon">spoon</label>
+                            <input type="checkbox" class="check">
+                            <label for="cups">cups</label>
+                            <input type="checkbox" class="check">
+                            <label for="ice">ice</label>
+                        </div>
+                        <div class="form-group center">
+                            <select>
+                                <option value="">SELECT PAYMENT METHOD</option>
+                                <option value="">CASH ON DELIVERY</option>
+                                <option value="">ONLINE PAYMENT</option>
+                            </select>
+                        </div>
+                        <button class="btn rev my4" onclick="contactBtn()">CHECKOUT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
+
+
+
+
